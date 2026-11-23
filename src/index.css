@@ -1,0 +1,114 @@
+/* Mengimpor font Poppins sesuai Desain Sistem */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --color-white: #ffffff;
+  --color-gray-light: #f3f4f6;
+  --color-gray-dark: #6b7280;
+  --color-black: #1f2937;
+  /* Disesuaikan dengan palet warna UI */
+  --color-blue: #4F46E5; 
+  --color-purple: #9333EA;
+  --bg-gradient: linear-gradient(135deg, #e0e7ff 0%, #fae8ff 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg-gradient);
+  color: var(--color-black);
+  min-height: 100vh;
+}
+
+/* Memastikan heading dan font-bold selalu tegak (Upright), bukan italic */
+h1, h2, h3, h4, h5, h6, .font-bold, b, strong {
+  font-weight: 700;
+  font-style: normal !important;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-blue);
+}
+
+/* Override untuk class Bootstrap agar sesuai desain */
+.btn-primary {
+  background: var(--color-purple);
+  color: var(--color-white);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  width: 100%;
+  transition: opacity 0.2s;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+  background: var(--color-purple);
+}
+
+.card {
+  background: var(--color-white);
+  border-radius: 1rem;
+  padding: 2rem;
+  border: none;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* --- TAMBAHAN UNTUK DASHBOARD & PROFILE --- */
+
+/* Gradien Card Mood di Dashboard */
+.mood-card {
+  background: linear-gradient(135deg, #d946ef 0%, #f43f5e 100%);
+  color: white;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  border: none;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Mempercantik tombol emoji */
+.emoji-btn {
+  background: white;
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: var(--color-black);
+  transition: transform 0.2s;
+  width: 90px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.emoji-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* Gradien Card Journey di Profile */
+.journey-card {
+  background: linear-gradient(135deg, #8b5cf6 0%, #d946ef 100%);
+  color: white;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  border: none;
+}
+
+/* Kotak statistik transparan di dalam Journey Card */
+.stat-box {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  backdrop-filter: blur(4px);
+}
