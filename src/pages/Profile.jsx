@@ -47,8 +47,6 @@ const Profile = () => {
   return (
     <div className="d-flex flex-column gap-4 pb-5">
       <div className="mb-2">
-        <h2 className="fw-bold" style={{ color: 'var(--color-purple)' }}>Your Profile</h2>
-        <p className="text-secondary small">Personal information and mental health statistics</p>
       </div>
 
       {/* User Info Card - User ID dihapus */}
@@ -74,7 +72,7 @@ const Profile = () => {
       {/* Mental Health Journey - dengan Neutral Days */}
       <div className="card shadow-sm p-4 border-0"
         style={{ borderRadius: '1.5rem', background: 'linear-gradient(135deg, #6366f1 0%, #a855f7 100%)', color: 'white' }}>
-        <h4 className="fw-bold mb-2">✨ Your Mental Health Journey</h4>
+        <h4 className="fw-bold mb-2">Your Mental Health Journey</h4>
         <p className="small text-white-50 mb-4">
           Your journal data is connected to your account and stored securely in the database.
         </p>

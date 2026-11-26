@@ -60,14 +60,6 @@ const Diary = () => {
             {loading ? 'Submitting...' : 'Submit Journal'}
           </button>
         </form>
-
-        {analysis && (
-          <div className="mt-4 p-4" style={{ borderRadius: '1rem', backgroundColor: '#EBFBFF' }}>
-            <h5 className="fw-bold mb-2" style={{ color: 'var(--color-blue)' }}>Analysis Result</h5>
-            <p className="mb-1"><strong>Status:</strong> {analysis.state}</p>
-            <p className="m-0 text-secondary">{analysis.message}</p>
-          </div>
-        )}
       </div>
     </div>
   );
